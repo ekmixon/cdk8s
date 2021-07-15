@@ -9,7 +9,7 @@
     "test": "echo 'no test for java yet.'"
   },
   "dependencies": {
-    "cdk8s": "0.0.0",
+    "cdk8s": "0.33.0",
     "constructs": "3.3.71"
   },
   "devDependencies": {

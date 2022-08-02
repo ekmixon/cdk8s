@@ -94,7 +94,7 @@ class CronTabProps:
 
     def __repr__(self) -> str:
         return "CronTabProps(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -158,7 +158,7 @@ class CronTabSpec:
 
     def __repr__(self) -> str:
         return "CronTabSpec(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 

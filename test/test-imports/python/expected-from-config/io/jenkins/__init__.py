@@ -41,12 +41,7 @@ class Jenkins(cdk8s.ApiObject, metaclass=jsii.JSIIMeta, jsii_type="iojenkins.Jen
 
     @jsii.member(jsii_name="manifest") # type: ignore[misc]
     @builtins.classmethod
-    def manifest(
-        cls,
-        *,
-        metadata: typing.Any = None,
-        spec: typing.Optional["JenkinsSpec"] = None,
-    ) -> typing.Any:
+    def manifest(self, *, metadata: typing.Any = None, spec: typing.Optional["JenkinsSpec"] = None) -> typing.Any:
         '''Renders a Kubernetes manifest for "Jenkins".
 
         This can be used to inline resource manifests inside other objects (e.g. as templates).
@@ -56,13 +51,13 @@ class Jenkins(cdk8s.ApiObject, metaclass=jsii.JSIIMeta, jsii_type="iojenkins.Jen
         '''
         props = JenkinsProps(metadata=metadata, spec=spec)
 
-        return typing.cast(typing.Any, jsii.sinvoke(cls, "manifest", [props]))
+        return typing.cast(typing.Any, jsii.sinvoke(self, "manifest", [props]))
 
     @jsii.python.classproperty # type: ignore[misc]
     @jsii.member(jsii_name="GVK")
-    def GVK(cls) -> cdk8s.GroupVersionKind:
+    def GVK(self) -> cdk8s.GroupVersionKind:
         '''Returns the apiVersion and kind for "Jenkins".'''
-        return typing.cast(cdk8s.GroupVersionKind, jsii.sget(cls, "GVK"))
+        return typing.cast(cdk8s.GroupVersionKind, jsii.sget(self, "GVK"))
 
 
 @jsii.data_type(
@@ -117,7 +112,7 @@ class JenkinsProps:
 
     def __repr__(self) -> str:
         return "JenkinsProps(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -342,7 +337,7 @@ class JenkinsSpec:
 
     def __repr__(self) -> str:
         return "JenkinsSpec(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -433,7 +428,7 @@ class JenkinsSpecBackup:
 
     def __repr__(self) -> str:
         return "JenkinsSpecBackup(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -477,7 +472,7 @@ class JenkinsSpecBackupAction:
 
     def __repr__(self) -> str:
         return "JenkinsSpecBackupAction(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -521,7 +516,7 @@ class JenkinsSpecBackupActionExec:
 
     def __repr__(self) -> str:
         return "JenkinsSpecBackupActionExec(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -580,7 +575,7 @@ class JenkinsSpecConfigurationAsCode:
 
     def __repr__(self) -> str:
         return "JenkinsSpecConfigurationAsCode(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -618,7 +613,7 @@ class JenkinsSpecConfigurationAsCodeConfigurations:
 
     def __repr__(self) -> str:
         return "JenkinsSpecConfigurationAsCodeConfigurations(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -656,7 +651,7 @@ class JenkinsSpecConfigurationAsCodeSecret:
 
     def __repr__(self) -> str:
         return "JenkinsSpecConfigurationAsCodeSecret(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -713,7 +708,7 @@ class JenkinsSpecGroovyScripts:
 
     def __repr__(self) -> str:
         return "JenkinsSpecGroovyScripts(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -751,7 +746,7 @@ class JenkinsSpecGroovyScriptsConfigurations:
 
     def __repr__(self) -> str:
         return "JenkinsSpecGroovyScriptsConfigurations(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -789,7 +784,7 @@ class JenkinsSpecGroovyScriptsSecret:
 
     def __repr__(self) -> str:
         return "JenkinsSpecGroovyScriptsSecret(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -828,7 +823,7 @@ class JenkinsSpecJenkinsApiSettings:
 
     def __repr__(self) -> str:
         return "JenkinsSpecJenkinsApiSettings(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -1065,7 +1060,7 @@ class JenkinsSpecMaster:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMaster(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -1116,7 +1111,7 @@ class JenkinsSpecMasterBasePlugins:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterBasePlugins(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -1403,7 +1398,7 @@ class JenkinsSpecMasterContainers:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterContainers(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -1482,7 +1477,7 @@ class JenkinsSpecMasterContainersEnv:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterContainersEnv(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -1564,7 +1559,7 @@ class JenkinsSpecMasterContainersEnvFrom:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterContainersEnvFrom(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -1621,7 +1616,7 @@ class JenkinsSpecMasterContainersEnvFromConfigMapRef:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterContainersEnvFromConfigMapRef(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -1678,7 +1673,7 @@ class JenkinsSpecMasterContainersEnvFromSecretRef:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterContainersEnvFromSecretRef(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -1782,7 +1777,7 @@ class JenkinsSpecMasterContainersEnvValueFrom:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterContainersEnvValueFrom(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -1852,8 +1847,9 @@ class JenkinsSpecMasterContainersEnvValueFromConfigMapKeyRef:
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "JenkinsSpecMasterContainersEnvValueFromConfigMapKeyRef(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "JenkinsSpecMasterContainersEnvValueFromConfigMapKeyRef(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -1909,7 +1905,7 @@ class JenkinsSpecMasterContainersEnvValueFromFieldRef:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterContainersEnvValueFromFieldRef(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -1981,8 +1977,9 @@ class JenkinsSpecMasterContainersEnvValueFromResourceFieldRef:
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "JenkinsSpecMasterContainersEnvValueFromResourceFieldRef(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "JenkinsSpecMasterContainersEnvValueFromResourceFieldRef(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -2054,8 +2051,9 @@ class JenkinsSpecMasterContainersEnvValueFromSecretKeyRef:
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "JenkinsSpecMasterContainersEnvValueFromSecretKeyRef(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "JenkinsSpecMasterContainersEnvValueFromSecretKeyRef(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -2122,7 +2120,7 @@ class JenkinsSpecMasterContainersLifecycle:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterContainersLifecycle(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -2208,7 +2206,7 @@ class JenkinsSpecMasterContainersLifecyclePostStart:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterContainersLifecyclePostStart(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -2254,7 +2252,7 @@ class JenkinsSpecMasterContainersLifecyclePostStartExec:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterContainersLifecyclePostStartExec(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -2366,8 +2364,9 @@ class JenkinsSpecMasterContainersLifecyclePostStartHttpGet:
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "JenkinsSpecMasterContainersLifecyclePostStartHttpGet(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "JenkinsSpecMasterContainersLifecyclePostStartHttpGet(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -2417,8 +2416,9 @@ class JenkinsSpecMasterContainersLifecyclePostStartHttpGetHttpHeaders:
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "JenkinsSpecMasterContainersLifecyclePostStartHttpGetHttpHeaders(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "JenkinsSpecMasterContainersLifecyclePostStartHttpGetHttpHeaders(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -2511,8 +2511,9 @@ class JenkinsSpecMasterContainersLifecyclePostStartTcpSocket:
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "JenkinsSpecMasterContainersLifecyclePostStartTcpSocket(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "JenkinsSpecMasterContainersLifecyclePostStartTcpSocket(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -2632,7 +2633,7 @@ class JenkinsSpecMasterContainersLifecyclePreStop:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterContainersLifecyclePreStop(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -2678,7 +2679,7 @@ class JenkinsSpecMasterContainersLifecyclePreStopExec:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterContainersLifecyclePreStopExec(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -2790,8 +2791,9 @@ class JenkinsSpecMasterContainersLifecyclePreStopHttpGet:
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "JenkinsSpecMasterContainersLifecyclePreStopHttpGet(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "JenkinsSpecMasterContainersLifecyclePreStopHttpGet(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -2841,8 +2843,9 @@ class JenkinsSpecMasterContainersLifecyclePreStopHttpGetHttpHeaders:
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "JenkinsSpecMasterContainersLifecyclePreStopHttpGetHttpHeaders(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "JenkinsSpecMasterContainersLifecyclePreStopHttpGetHttpHeaders(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -2935,8 +2938,9 @@ class JenkinsSpecMasterContainersLifecyclePreStopTcpSocket:
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "JenkinsSpecMasterContainersLifecyclePreStopTcpSocket(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "JenkinsSpecMasterContainersLifecyclePreStopTcpSocket(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -3146,7 +3150,7 @@ class JenkinsSpecMasterContainersLivenessProbe:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterContainersLivenessProbe(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -3192,7 +3196,7 @@ class JenkinsSpecMasterContainersLivenessProbeExec:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterContainersLivenessProbeExec(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -3305,7 +3309,7 @@ class JenkinsSpecMasterContainersLivenessProbeHttpGet:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterContainersLivenessProbeHttpGet(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -3355,8 +3359,9 @@ class JenkinsSpecMasterContainersLivenessProbeHttpGetHttpHeaders:
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "JenkinsSpecMasterContainersLivenessProbeHttpGetHttpHeaders(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "JenkinsSpecMasterContainersLivenessProbeHttpGetHttpHeaders(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -3450,7 +3455,7 @@ class JenkinsSpecMasterContainersLivenessProbeTcpSocket:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterContainersLivenessProbeTcpSocket(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -3595,7 +3600,7 @@ class JenkinsSpecMasterContainersPorts:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterContainersPorts(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -3771,7 +3776,7 @@ class JenkinsSpecMasterContainersReadinessProbe:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterContainersReadinessProbe(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -3817,7 +3822,7 @@ class JenkinsSpecMasterContainersReadinessProbeExec:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterContainersReadinessProbeExec(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -3930,7 +3935,7 @@ class JenkinsSpecMasterContainersReadinessProbeHttpGet:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterContainersReadinessProbeHttpGet(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -3980,8 +3985,9 @@ class JenkinsSpecMasterContainersReadinessProbeHttpGetHttpHeaders:
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "JenkinsSpecMasterContainersReadinessProbeHttpGetHttpHeaders(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "JenkinsSpecMasterContainersReadinessProbeHttpGetHttpHeaders(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -4074,8 +4080,9 @@ class JenkinsSpecMasterContainersReadinessProbeTcpSocket:
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "JenkinsSpecMasterContainersReadinessProbeTcpSocket(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "JenkinsSpecMasterContainersReadinessProbeTcpSocket(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -4170,7 +4177,7 @@ class JenkinsSpecMasterContainersResources:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterContainersResources(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -4382,7 +4389,7 @@ class JenkinsSpecMasterContainersSecurityContext:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterContainersSecurityContext(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -4440,8 +4447,9 @@ class JenkinsSpecMasterContainersSecurityContextCapabilities:
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "JenkinsSpecMasterContainersSecurityContextCapabilities(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "JenkinsSpecMasterContainersSecurityContextCapabilities(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -4523,8 +4531,9 @@ class JenkinsSpecMasterContainersSecurityContextSeLinuxOptions:
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "JenkinsSpecMasterContainersSecurityContextSeLinuxOptions(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "JenkinsSpecMasterContainersSecurityContextSeLinuxOptions(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -4603,8 +4612,9 @@ class JenkinsSpecMasterContainersSecurityContextWindowsOptions:
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "JenkinsSpecMasterContainersSecurityContextWindowsOptions(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "JenkinsSpecMasterContainersSecurityContextWindowsOptions(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -4735,7 +4745,7 @@ class JenkinsSpecMasterContainersVolumeMounts:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterContainersVolumeMounts(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -4775,7 +4785,7 @@ class JenkinsSpecMasterImagePullSecrets:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterImagePullSecrets(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -4826,7 +4836,7 @@ class JenkinsSpecMasterPlugins:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterPlugins(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -5003,7 +5013,7 @@ class JenkinsSpecMasterSecurityContext:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterSecurityContext(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -5086,7 +5096,7 @@ class JenkinsSpecMasterSecurityContextSeLinuxOptions:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterSecurityContextSeLinuxOptions(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -5137,7 +5147,7 @@ class JenkinsSpecMasterSecurityContextSysctls:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterSecurityContextSysctls(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -5217,7 +5227,7 @@ class JenkinsSpecMasterSecurityContextWindowsOptions:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterSecurityContextWindowsOptions(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -5329,7 +5339,7 @@ class JenkinsSpecMasterTolerations:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterTolerations(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -5860,7 +5870,7 @@ class JenkinsSpecMasterVolumes:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumes(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -5957,7 +5967,7 @@ class JenkinsSpecMasterVolumesAwsElasticBlockStore:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesAwsElasticBlockStore(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -6080,7 +6090,7 @@ class JenkinsSpecMasterVolumesAzureDisk:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesAzureDisk(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -6157,7 +6167,7 @@ class JenkinsSpecMasterVolumesAzureFile:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesAzureFile(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -6280,7 +6290,7 @@ class JenkinsSpecMasterVolumesCephfs:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesCephfs(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -6322,7 +6332,7 @@ class JenkinsSpecMasterVolumesCephfsSecretRef:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesCephfsSecretRef(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -6421,7 +6431,7 @@ class JenkinsSpecMasterVolumesCinder:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesCinder(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -6461,7 +6471,7 @@ class JenkinsSpecMasterVolumesCinderSecretRef:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesCinderSecretRef(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -6557,7 +6567,7 @@ class JenkinsSpecMasterVolumesConfigMap:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesConfigMap(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -6630,7 +6640,7 @@ class JenkinsSpecMasterVolumesConfigMapItems:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesConfigMapItems(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -6749,7 +6759,7 @@ class JenkinsSpecMasterVolumesCsi:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesCsi(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -6791,7 +6801,7 @@ class JenkinsSpecMasterVolumesCsiNodePublishSecretRef:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesCsiNodePublishSecretRef(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -6852,7 +6862,7 @@ class JenkinsSpecMasterVolumesDownwardApi:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesDownwardApi(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -6951,7 +6961,7 @@ class JenkinsSpecMasterVolumesDownwardApiItems:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesDownwardApiItems(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -7007,7 +7017,7 @@ class JenkinsSpecMasterVolumesDownwardApiItemsFieldRef:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesDownwardApiItemsFieldRef(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -7079,8 +7089,9 @@ class JenkinsSpecMasterVolumesDownwardApiItemsResourceFieldRef:
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "JenkinsSpecMasterVolumesDownwardApiItemsResourceFieldRef(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "JenkinsSpecMasterVolumesDownwardApiItemsResourceFieldRef(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -7141,7 +7152,7 @@ class JenkinsSpecMasterVolumesEmptyDir:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesEmptyDir(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -7247,7 +7258,7 @@ class JenkinsSpecMasterVolumesFc:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesFc(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -7360,7 +7371,7 @@ class JenkinsSpecMasterVolumesFlexVolume:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesFlexVolume(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -7402,7 +7413,7 @@ class JenkinsSpecMasterVolumesFlexVolumeSecretRef:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesFlexVolumeSecretRef(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -7461,7 +7472,7 @@ class JenkinsSpecMasterVolumesFlocker:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesFlocker(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -7560,7 +7571,7 @@ class JenkinsSpecMasterVolumesGcePersistentDisk:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesGcePersistentDisk(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -7637,7 +7648,7 @@ class JenkinsSpecMasterVolumesGitRepo:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesGitRepo(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -7716,7 +7727,7 @@ class JenkinsSpecMasterVolumesGlusterfs:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesGlusterfs(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -7778,7 +7789,7 @@ class JenkinsSpecMasterVolumesHostPath:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesHostPath(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -7983,7 +7994,7 @@ class JenkinsSpecMasterVolumesIscsi:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesIscsi(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -8023,7 +8034,7 @@ class JenkinsSpecMasterVolumesIscsiSecretRef:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesIscsiSecretRef(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -8100,7 +8111,7 @@ class JenkinsSpecMasterVolumesNfs:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesNfs(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -8162,7 +8173,7 @@ class JenkinsSpecMasterVolumesPersistentVolumeClaim:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesPersistentVolumeClaim(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -8220,7 +8231,7 @@ class JenkinsSpecMasterVolumesPhotonPersistentDisk:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesPhotonPersistentDisk(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -8299,7 +8310,7 @@ class JenkinsSpecMasterVolumesPortworxVolume:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesPortworxVolume(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -8357,7 +8368,7 @@ class JenkinsSpecMasterVolumesProjected:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesProjected(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -8459,7 +8470,7 @@ class JenkinsSpecMasterVolumesProjectedSources:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesProjectedSources(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -8533,7 +8544,7 @@ class JenkinsSpecMasterVolumesProjectedSourcesConfigMap:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesProjectedSourcesConfigMap(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -8605,8 +8616,9 @@ class JenkinsSpecMasterVolumesProjectedSourcesConfigMapItems:
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "JenkinsSpecMasterVolumesProjectedSourcesConfigMapItems(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "JenkinsSpecMasterVolumesProjectedSourcesConfigMapItems(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -8649,8 +8661,9 @@ class JenkinsSpecMasterVolumesProjectedSourcesDownwardApi:
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "JenkinsSpecMasterVolumesProjectedSourcesDownwardApi(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "JenkinsSpecMasterVolumesProjectedSourcesDownwardApi(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -8748,8 +8761,9 @@ class JenkinsSpecMasterVolumesProjectedSourcesDownwardApiItems:
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "JenkinsSpecMasterVolumesProjectedSourcesDownwardApiItems(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "JenkinsSpecMasterVolumesProjectedSourcesDownwardApiItems(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -8804,8 +8818,9 @@ class JenkinsSpecMasterVolumesProjectedSourcesDownwardApiItemsFieldRef:
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "JenkinsSpecMasterVolumesProjectedSourcesDownwardApiItemsFieldRef(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "JenkinsSpecMasterVolumesProjectedSourcesDownwardApiItemsFieldRef(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -8877,8 +8892,9 @@ class JenkinsSpecMasterVolumesProjectedSourcesDownwardApiItemsResourceFieldRef:
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "JenkinsSpecMasterVolumesProjectedSourcesDownwardApiItemsResourceFieldRef(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "JenkinsSpecMasterVolumesProjectedSourcesDownwardApiItemsResourceFieldRef(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -8952,7 +8968,7 @@ class JenkinsSpecMasterVolumesProjectedSourcesSecret:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesProjectedSourcesSecret(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -9024,8 +9040,9 @@ class JenkinsSpecMasterVolumesProjectedSourcesSecretItems:
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "JenkinsSpecMasterVolumesProjectedSourcesSecretItems(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "JenkinsSpecMasterVolumesProjectedSourcesSecretItems(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -9103,8 +9120,9 @@ class JenkinsSpecMasterVolumesProjectedSourcesServiceAccountToken:
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "JenkinsSpecMasterVolumesProjectedSourcesServiceAccountToken(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "JenkinsSpecMasterVolumesProjectedSourcesServiceAccountToken(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -9227,7 +9245,7 @@ class JenkinsSpecMasterVolumesQuobyte:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesQuobyte(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -9400,7 +9418,7 @@ class JenkinsSpecMasterVolumesRbd:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesRbd(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -9444,7 +9462,7 @@ class JenkinsSpecMasterVolumesRbdSecretRef:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesRbdSecretRef(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -9631,7 +9649,7 @@ class JenkinsSpecMasterVolumesScaleIo:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesScaleIo(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -9673,7 +9691,7 @@ class JenkinsSpecMasterVolumesScaleIoSecretRef:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesScaleIoSecretRef(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -9771,7 +9789,7 @@ class JenkinsSpecMasterVolumesSecret:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesSecret(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -9844,7 +9862,7 @@ class JenkinsSpecMasterVolumesSecretItems:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesSecretItems(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -9960,7 +9978,7 @@ class JenkinsSpecMasterVolumesStorageos:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesStorageos(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -10002,7 +10020,7 @@ class JenkinsSpecMasterVolumesStorageosSecretRef:
 
     def __repr__(self) -> str:
         return "JenkinsSpecMasterVolumesStorageosSecretRef(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 

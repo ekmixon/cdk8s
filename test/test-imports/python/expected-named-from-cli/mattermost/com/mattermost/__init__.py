@@ -124,7 +124,7 @@ class ClusterInstallationProps:
 
     def __repr__(self) -> str:
         return "ClusterInstallationProps(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -470,7 +470,7 @@ class ClusterInstallationSpec:
 
     def __repr__(self) -> str:
         return "ClusterInstallationSpec(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -554,7 +554,7 @@ class ClusterInstallationSpecAffinity:
 
     def __repr__(self) -> str:
         return "ClusterInstallationSpecAffinity(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -622,7 +622,7 @@ class ClusterInstallationSpecAffinityNodeAffinity:
 
     def __repr__(self) -> str:
         return "ClusterInstallationSpecAffinityNodeAffinity(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -681,8 +681,9 @@ class ClusterInstallationSpecAffinityNodeAffinityPreferredDuringSchedulingIgnore
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "ClusterInstallationSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "ClusterInstallationSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -743,8 +744,9 @@ class ClusterInstallationSpecAffinityNodeAffinityPreferredDuringSchedulingIgnore
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "ClusterInstallationSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "ClusterInstallationSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -816,8 +818,9 @@ class ClusterInstallationSpecAffinityNodeAffinityPreferredDuringSchedulingIgnore
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "ClusterInstallationSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "ClusterInstallationSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -889,8 +892,9 @@ class ClusterInstallationSpecAffinityNodeAffinityPreferredDuringSchedulingIgnore
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "ClusterInstallationSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "ClusterInstallationSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchFields(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -938,8 +942,9 @@ class ClusterInstallationSpecAffinityNodeAffinityRequiredDuringSchedulingIgnored
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "ClusterInstallationSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "ClusterInstallationSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -1002,8 +1007,9 @@ class ClusterInstallationSpecAffinityNodeAffinityRequiredDuringSchedulingIgnored
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "ClusterInstallationSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "ClusterInstallationSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerms(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -1075,8 +1081,9 @@ class ClusterInstallationSpecAffinityNodeAffinityRequiredDuringSchedulingIgnored
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "ClusterInstallationSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchExpressions(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "ClusterInstallationSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchExpressions(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -1148,8 +1155,9 @@ class ClusterInstallationSpecAffinityNodeAffinityRequiredDuringSchedulingIgnored
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "ClusterInstallationSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchFields(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "ClusterInstallationSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermsMatchFields(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -1215,7 +1223,7 @@ class ClusterInstallationSpecAffinityPodAffinity:
 
     def __repr__(self) -> str:
         return "ClusterInstallationSpecAffinityPodAffinity(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -1276,8 +1284,9 @@ class ClusterInstallationSpecAffinityPodAffinityPreferredDuringSchedulingIgnored
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "ClusterInstallationSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "ClusterInstallationSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -1359,8 +1368,9 @@ class ClusterInstallationSpecAffinityPodAffinityPreferredDuringSchedulingIgnored
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "ClusterInstallationSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "ClusterInstallationSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -1425,8 +1435,9 @@ class ClusterInstallationSpecAffinityPodAffinityPreferredDuringSchedulingIgnored
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "ClusterInstallationSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "ClusterInstallationSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -1498,8 +1509,9 @@ class ClusterInstallationSpecAffinityPodAffinityPreferredDuringSchedulingIgnored
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "ClusterInstallationSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "ClusterInstallationSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -1579,8 +1591,9 @@ class ClusterInstallationSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredD
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "ClusterInstallationSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "ClusterInstallationSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -1645,8 +1658,9 @@ class ClusterInstallationSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredD
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "ClusterInstallationSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "ClusterInstallationSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -1718,8 +1732,9 @@ class ClusterInstallationSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredD
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "ClusterInstallationSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "ClusterInstallationSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -1785,7 +1800,7 @@ class ClusterInstallationSpecAffinityPodAntiAffinity:
 
     def __repr__(self) -> str:
         return "ClusterInstallationSpecAffinityPodAntiAffinity(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -1846,8 +1861,9 @@ class ClusterInstallationSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgn
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "ClusterInstallationSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "ClusterInstallationSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -1929,8 +1945,9 @@ class ClusterInstallationSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgn
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "ClusterInstallationSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "ClusterInstallationSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -1995,8 +2012,9 @@ class ClusterInstallationSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgn
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "ClusterInstallationSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "ClusterInstallationSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -2068,8 +2086,9 @@ class ClusterInstallationSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgn
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "ClusterInstallationSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "ClusterInstallationSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -2149,8 +2168,9 @@ class ClusterInstallationSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgno
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "ClusterInstallationSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "ClusterInstallationSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -2215,8 +2235,9 @@ class ClusterInstallationSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgno
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "ClusterInstallationSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "ClusterInstallationSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -2288,8 +2309,9 @@ class ClusterInstallationSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgno
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "ClusterInstallationSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "ClusterInstallationSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -2379,7 +2401,7 @@ class ClusterInstallationSpecBlueGreen:
 
     def __repr__(self) -> str:
         return "ClusterInstallationSpecBlueGreen(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -2471,7 +2493,7 @@ class ClusterInstallationSpecBlueGreenBlue:
 
     def __repr__(self) -> str:
         return "ClusterInstallationSpecBlueGreenBlue(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -2563,7 +2585,7 @@ class ClusterInstallationSpecBlueGreenGreen:
 
     def __repr__(self) -> str:
         return "ClusterInstallationSpecBlueGreenGreen(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -2620,7 +2642,7 @@ class ClusterInstallationSpecCanary:
 
     def __repr__(self) -> str:
         return "ClusterInstallationSpecCanary(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -2712,7 +2734,7 @@ class ClusterInstallationSpecCanaryDeployment:
 
     def __repr__(self) -> str:
         return "ClusterInstallationSpecCanaryDeployment(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -2907,7 +2929,7 @@ class ClusterInstallationSpecDatabase:
 
     def __repr__(self) -> str:
         return "ClusterInstallationSpecDatabase(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -2966,7 +2988,7 @@ class ClusterInstallationSpecDatabaseResources:
 
     def __repr__(self) -> str:
         return "ClusterInstallationSpecDatabaseResources(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -3031,7 +3053,7 @@ class ClusterInstallationSpecElasticSearch:
 
     def __repr__(self) -> str:
         return "ClusterInstallationSpecElasticSearch(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -3205,7 +3227,7 @@ class ClusterInstallationSpecLivenessProbe:
 
     def __repr__(self) -> str:
         return "ClusterInstallationSpecLivenessProbe(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -3251,7 +3273,7 @@ class ClusterInstallationSpecLivenessProbeExec:
 
     def __repr__(self) -> str:
         return "ClusterInstallationSpecLivenessProbeExec(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -3364,7 +3386,7 @@ class ClusterInstallationSpecLivenessProbeHttpGet:
 
     def __repr__(self) -> str:
         return "ClusterInstallationSpecLivenessProbeHttpGet(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -3414,8 +3436,9 @@ class ClusterInstallationSpecLivenessProbeHttpGetHttpHeaders:
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "ClusterInstallationSpecLivenessProbeHttpGetHttpHeaders(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "ClusterInstallationSpecLivenessProbeHttpGetHttpHeaders(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -3509,7 +3532,7 @@ class ClusterInstallationSpecLivenessProbeTcpSocket:
 
     def __repr__(self) -> str:
         return "ClusterInstallationSpecLivenessProbeTcpSocket(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -3624,7 +3647,7 @@ class ClusterInstallationSpecMattermostEnv:
 
     def __repr__(self) -> str:
         return "ClusterInstallationSpecMattermostEnv(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -3728,7 +3751,7 @@ class ClusterInstallationSpecMattermostEnvValueFrom:
 
     def __repr__(self) -> str:
         return "ClusterInstallationSpecMattermostEnvValueFrom(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -3798,8 +3821,9 @@ class ClusterInstallationSpecMattermostEnvValueFromConfigMapKeyRef:
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "ClusterInstallationSpecMattermostEnvValueFromConfigMapKeyRef(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "ClusterInstallationSpecMattermostEnvValueFromConfigMapKeyRef(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -3854,8 +3878,9 @@ class ClusterInstallationSpecMattermostEnvValueFromFieldRef:
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "ClusterInstallationSpecMattermostEnvValueFromFieldRef(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "ClusterInstallationSpecMattermostEnvValueFromFieldRef(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -3927,8 +3952,9 @@ class ClusterInstallationSpecMattermostEnvValueFromResourceFieldRef:
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "ClusterInstallationSpecMattermostEnvValueFromResourceFieldRef(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "ClusterInstallationSpecMattermostEnvValueFromResourceFieldRef(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -4000,8 +4026,9 @@ class ClusterInstallationSpecMattermostEnvValueFromSecretKeyRef:
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "ClusterInstallationSpecMattermostEnvValueFromSecretKeyRef(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "ClusterInstallationSpecMattermostEnvValueFromSecretKeyRef(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -4125,7 +4152,7 @@ class ClusterInstallationSpecMinio:
 
     def __repr__(self) -> str:
         return "ClusterInstallationSpecMinio(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -4184,7 +4211,7 @@ class ClusterInstallationSpecMinioResources:
 
     def __repr__(self) -> str:
         return "ClusterInstallationSpecMinioResources(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -4358,7 +4385,7 @@ class ClusterInstallationSpecReadinessProbe:
 
     def __repr__(self) -> str:
         return "ClusterInstallationSpecReadinessProbe(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -4404,7 +4431,7 @@ class ClusterInstallationSpecReadinessProbeExec:
 
     def __repr__(self) -> str:
         return "ClusterInstallationSpecReadinessProbeExec(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -4517,7 +4544,7 @@ class ClusterInstallationSpecReadinessProbeHttpGet:
 
     def __repr__(self) -> str:
         return "ClusterInstallationSpecReadinessProbeHttpGet(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -4567,8 +4594,9 @@ class ClusterInstallationSpecReadinessProbeHttpGetHttpHeaders:
         return not (rhs == self)
 
     def __repr__(self) -> str:
-        return "ClusterInstallationSpecReadinessProbeHttpGetHttpHeaders(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+        return (
+            "ClusterInstallationSpecReadinessProbeHttpGetHttpHeaders(%s)"
+            % ", ".join(f"{k}={repr(v)}" for k, v in self._values.items())
         )
 
 
@@ -4662,7 +4690,7 @@ class ClusterInstallationSpecReadinessProbeTcpSocket:
 
     def __repr__(self) -> str:
         return "ClusterInstallationSpecReadinessProbeTcpSocket(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -4755,7 +4783,7 @@ class ClusterInstallationSpecResources:
 
     def __repr__(self) -> str:
         return "ClusterInstallationSpecResources(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 

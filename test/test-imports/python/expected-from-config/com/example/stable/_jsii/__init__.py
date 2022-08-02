@@ -12,8 +12,12 @@ import cdk8s._jsii
 import constructs._jsii
 
 __jsii_assembly__ = jsii.JSIIAssembly.load(
-    "comexamplestable", "0.0.0", __name__[0:-6], "comexamplestable@0.0.0.jsii.tgz"
+    "comexamplestable",
+    "0.0.0",
+    __name__[:-6],
+    "comexamplestable@0.0.0.jsii.tgz",
 )
+
 
 __all__ = [
     "__jsii_assembly__",

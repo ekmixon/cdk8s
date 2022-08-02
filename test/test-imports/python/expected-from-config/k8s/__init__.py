@@ -88,7 +88,7 @@ class Affinity:
 
     def __repr__(self) -> str:
         return "Affinity(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -132,7 +132,7 @@ class AggregationRule:
 
     def __repr__(self) -> str:
         return "AggregationRule(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -171,7 +171,7 @@ class AllowedCsiDriver:
 
     def __repr__(self) -> str:
         return "AllowedCsiDriver(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -210,7 +210,7 @@ class AllowedFlexVolume:
 
     def __repr__(self) -> str:
         return "AllowedFlexVolume(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -271,7 +271,7 @@ class AllowedHostPath:
 
     def __repr__(self) -> str:
         return "AllowedHostPath(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -416,7 +416,7 @@ class ApiServiceSpec:
 
     def __repr__(self) -> str:
         return "ApiServiceSpec(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -471,7 +471,7 @@ class AuditSinkSpec:
 
     def __repr__(self) -> str:
         return "AuditSinkSpec(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -568,7 +568,7 @@ class AwsElasticBlockStoreVolumeSource:
 
     def __repr__(self) -> str:
         return "AwsElasticBlockStoreVolumeSource(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -691,7 +691,7 @@ class AzureDiskVolumeSource:
 
     def __repr__(self) -> str:
         return "AzureDiskVolumeSource(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -782,7 +782,7 @@ class AzureFilePersistentVolumeSource:
 
     def __repr__(self) -> str:
         return "AzureFilePersistentVolumeSource(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -859,7 +859,7 @@ class AzureFileVolumeSource:
 
     def __repr__(self) -> str:
         return "AzureFileVolumeSource(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -947,7 +947,7 @@ class BoundObjectReference:
 
     def __repr__(self) -> str:
         return "BoundObjectReference(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -1002,7 +1002,7 @@ class Capabilities:
 
     def __repr__(self) -> str:
         return "Capabilities(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -1125,7 +1125,7 @@ class CephFsPersistentVolumeSource:
 
     def __repr__(self) -> str:
         return "CephFsPersistentVolumeSource(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -1248,7 +1248,7 @@ class CephFsVolumeSource:
 
     def __repr__(self) -> str:
         return "CephFsVolumeSource(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -1378,7 +1378,7 @@ class CertificateSigningRequestSpec:
 
     def __repr__(self) -> str:
         return "CertificateSigningRequestSpec(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -1477,7 +1477,7 @@ class CinderPersistentVolumeSource:
 
     def __repr__(self) -> str:
         return "CinderPersistentVolumeSource(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -1576,7 +1576,7 @@ class CinderVolumeSource:
 
     def __repr__(self) -> str:
         return "CinderVolumeSource(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -1616,7 +1616,7 @@ class ClientIpConfig:
 
     def __repr__(self) -> str:
         return "ClientIpConfig(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -1711,7 +1711,7 @@ class ComponentCondition:
 
     def __repr__(self) -> str:
         return "ComponentCondition(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -1770,7 +1770,7 @@ class ConfigMapEnvSource:
 
     def __repr__(self) -> str:
         return "ConfigMapEnvSource(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -1841,7 +1841,7 @@ class ConfigMapKeySelector:
 
     def __repr__(self) -> str:
         return "ConfigMapKeySelector(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -1942,7 +1942,7 @@ class ConfigMapNodeConfigSource:
 
     def __repr__(self) -> str:
         return "ConfigMapNodeConfigSource(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -2016,7 +2016,7 @@ class ConfigMapProjection:
 
     def __repr__(self) -> str:
         return "ConfigMapProjection(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -2112,7 +2112,7 @@ class ConfigMapVolumeSource:
 
     def __repr__(self) -> str:
         return "ConfigMapVolumeSource(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -2519,7 +2519,7 @@ class Container:
 
     def __repr__(self) -> str:
         return "Container(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -2630,7 +2630,7 @@ class ContainerPort:
 
     def __repr__(self) -> str:
         return "ContainerPort(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -2773,7 +2773,7 @@ class CronJobSpec:
 
     def __repr__(self) -> str:
         return "CronJobSpec(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -2846,7 +2846,7 @@ class CrossVersionObjectReference:
 
     def __repr__(self) -> str:
         return "CrossVersionObjectReference(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -2926,7 +2926,7 @@ class CsiDriverSpec:
 
     def __repr__(self) -> str:
         return "CsiDriverSpec(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -3021,7 +3021,7 @@ class CsiNodeDriver:
 
     def __repr__(self) -> str:
         return "CsiNodeDriver(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -3062,7 +3062,7 @@ class CsiNodeSpec:
 
     def __repr__(self) -> str:
         return "CsiNodeSpec(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -3247,7 +3247,7 @@ class CsiPersistentVolumeSource:
 
     def __repr__(self) -> str:
         return "CsiPersistentVolumeSource(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -3364,7 +3364,7 @@ class CsiVolumeSource:
 
     def __repr__(self) -> str:
         return "CsiVolumeSource(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -3485,7 +3485,7 @@ class CustomResourceColumnDefinition:
 
     def __repr__(self) -> str:
         return "CustomResourceColumnDefinition(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -3569,7 +3569,7 @@ class CustomResourceConversion:
 
     def __repr__(self) -> str:
         return "CustomResourceConversion(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -3698,7 +3698,7 @@ class CustomResourceDefinitionNames:
 
     def __repr__(self) -> str:
         return "CustomResourceDefinitionNames(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -3901,7 +3901,7 @@ class CustomResourceDefinitionSpec:
 
     def __repr__(self) -> str:
         return "CustomResourceDefinitionSpec(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -4030,7 +4030,7 @@ class CustomResourceDefinitionVersion:
 
     def __repr__(self) -> str:
         return "CustomResourceDefinitionVersion(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -4103,7 +4103,7 @@ class CustomResourceSubresourceScale:
 
     def __repr__(self) -> str:
         return "CustomResourceSubresourceScale(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -4162,7 +4162,7 @@ class CustomResourceSubresources:
 
     def __repr__(self) -> str:
         return "CustomResourceSubresources(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -4206,7 +4206,7 @@ class CustomResourceValidation:
 
     def __repr__(self) -> str:
         return "CustomResourceValidation(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -4341,7 +4341,7 @@ class DaemonSetSpec:
 
     def __repr__(self) -> str:
         return "DaemonSetSpec(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -4403,7 +4403,7 @@ class DaemonSetUpdateStrategy:
 
     def __repr__(self) -> str:
         return "DaemonSetUpdateStrategy(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -4549,7 +4549,7 @@ class DeleteOptions:
 
     def __repr__(self) -> str:
         return "DeleteOptions(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -4716,7 +4716,7 @@ class DeploymentSpec:
 
     def __repr__(self) -> str:
         return "DeploymentSpec(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -4779,7 +4779,7 @@ class DeploymentStrategy:
 
     def __repr__(self) -> str:
         return "DeploymentStrategy(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -4823,7 +4823,7 @@ class DownwardApiProjection:
 
     def __repr__(self) -> str:
         return "DownwardApiProjection(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -4918,7 +4918,7 @@ class DownwardApiVolumeFile:
 
     def __repr__(self) -> str:
         return "DownwardApiVolumeFile(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -4979,7 +4979,7 @@ class DownwardApiVolumeSource:
 
     def __repr__(self) -> str:
         return "DownwardApiVolumeSource(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -5040,7 +5040,7 @@ class EmptyDirVolumeSource:
 
     def __repr__(self) -> str:
         return "EmptyDirVolumeSource(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -5157,7 +5157,7 @@ class Endpoint:
 
     def __repr__(self) -> str:
         return "Endpoint(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -5250,7 +5250,7 @@ class EndpointAddress:
 
     def __repr__(self) -> str:
         return "EndpointAddress(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -5290,7 +5290,7 @@ class EndpointConditions:
 
     def __repr__(self) -> str:
         return "EndpointConditions(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -5365,7 +5365,7 @@ class EndpointPort:
 
     def __repr__(self) -> str:
         return "EndpointPort(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -5448,7 +5448,7 @@ class EndpointSubset:
 
     def __repr__(self) -> str:
         return "EndpointSubset(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -5526,7 +5526,7 @@ class EnvFromSource:
 
     def __repr__(self) -> str:
         return "EnvFromSource(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -5605,7 +5605,7 @@ class EnvVar:
 
     def __repr__(self) -> str:
         return "EnvVar(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -5699,7 +5699,7 @@ class EnvVarSource:
 
     def __repr__(self) -> str:
         return "EnvVarSource(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -6112,7 +6112,7 @@ class EphemeralContainer:
 
     def __repr__(self) -> str:
         return "EphemeralContainer(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -6187,7 +6187,7 @@ class EventSeries:
 
     def __repr__(self) -> str:
         return "EventSeries(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -6242,7 +6242,7 @@ class EventSource:
 
     def __repr__(self) -> str:
         return "EventSource(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -6286,7 +6286,7 @@ class ExecAction:
 
     def __repr__(self) -> str:
         return "ExecAction(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -6339,7 +6339,7 @@ class ExternalDocumentation:
 
     def __repr__(self) -> str:
         return "ExternalDocumentation(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -6394,7 +6394,7 @@ class ExternalMetricSource:
 
     def __repr__(self) -> str:
         return "ExternalMetricSource(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -6502,7 +6502,7 @@ class FcVolumeSource:
 
     def __repr__(self) -> str:
         return "FcVolumeSource(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -6613,7 +6613,7 @@ class FlexPersistentVolumeSource:
 
     def __repr__(self) -> str:
         return "FlexPersistentVolumeSource(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -6724,7 +6724,7 @@ class FlexVolumeSource:
 
     def __repr__(self) -> str:
         return "FlexVolumeSource(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -6783,7 +6783,7 @@ class FlockerVolumeSource:
 
     def __repr__(self) -> str:
         return "FlockerVolumeSource(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -6824,7 +6824,7 @@ class FlowDistinguisherMethod:
 
     def __repr__(self) -> str:
         return "FlowDistinguisherMethod(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -6923,7 +6923,7 @@ class FlowSchemaSpec:
 
     def __repr__(self) -> str:
         return "FlowSchemaSpec(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -6980,7 +6980,7 @@ class FsGroupStrategyOptions:
 
     def __repr__(self) -> str:
         return "FsGroupStrategyOptions(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -7079,7 +7079,7 @@ class GcePersistentDiskVolumeSource:
 
     def __repr__(self) -> str:
         return "GcePersistentDiskVolumeSource(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -7158,7 +7158,7 @@ class GitRepoVolumeSource:
 
     def __repr__(self) -> str:
         return "GitRepoVolumeSource(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -7257,7 +7257,7 @@ class GlusterfsPersistentVolumeSource:
 
     def __repr__(self) -> str:
         return "GlusterfsPersistentVolumeSource(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -7336,7 +7336,7 @@ class GlusterfsVolumeSource:
 
     def __repr__(self) -> str:
         return "GlusterfsVolumeSource(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -7414,7 +7414,7 @@ class Handler:
 
     def __repr__(self) -> str:
         return "Handler(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -7509,7 +7509,7 @@ class HorizontalPodAutoscalerSpec:
 
     def __repr__(self) -> str:
         return "HorizontalPodAutoscalerSpec(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -7564,7 +7564,7 @@ class HostAlias:
 
     def __repr__(self) -> str:
         return "HostAlias(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -7626,7 +7626,7 @@ class HostPathVolumeSource:
 
     def __repr__(self) -> str:
         return "HostPathVolumeSource(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -7679,7 +7679,7 @@ class HostPortRange:
 
     def __repr__(self) -> str:
         return "HostPortRange(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -7790,7 +7790,7 @@ class HttpGetAction:
 
     def __repr__(self) -> str:
         return "HttpGetAction(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -7841,7 +7841,7 @@ class HttpHeader:
 
     def __repr__(self) -> str:
         return "HttpHeader(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -7901,7 +7901,7 @@ class HttpIngressPath:
 
     def __repr__(self) -> str:
         return "HttpIngressPath(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -7942,7 +7942,7 @@ class HttpIngressRuleValue:
 
     def __repr__(self) -> str:
         return "HttpIngressRuleValue(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -7993,7 +7993,7 @@ class IdRange:
 
     def __repr__(self) -> str:
         return "IdRange(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -8049,7 +8049,7 @@ class IngressBackend:
 
     def __repr__(self) -> str:
         return "IngressBackend(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -8114,7 +8114,7 @@ class IngressRule:
 
     def __repr__(self) -> str:
         return "IngressRule(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -8190,7 +8190,7 @@ class IngressSpec:
 
     def __repr__(self) -> str:
         return "IngressSpec(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -8251,7 +8251,7 @@ class IngressTls:
 
     def __repr__(self) -> str:
         return "IngressTls(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -8262,19 +8262,19 @@ class IntOrString(metaclass=jsii.JSIIMeta, jsii_type="k8s.IntOrString"):
 
     @jsii.member(jsii_name="fromNumber") # type: ignore[misc]
     @builtins.classmethod
-    def from_number(cls, value: jsii.Number) -> "IntOrString":
+    def from_number(self, value: jsii.Number) -> "IntOrString":
         '''
         :param value: -
         '''
-        return typing.cast("IntOrString", jsii.sinvoke(cls, "fromNumber", [value]))
+        return typing.cast("IntOrString", jsii.sinvoke(self, "fromNumber", [value]))
 
     @jsii.member(jsii_name="fromString") # type: ignore[misc]
     @builtins.classmethod
-    def from_string(cls, value: builtins.str) -> "IntOrString":
+    def from_string(self, value: builtins.str) -> "IntOrString":
         '''
         :param value: -
         '''
-        return typing.cast("IntOrString", jsii.sinvoke(cls, "fromString", [value]))
+        return typing.cast("IntOrString", jsii.sinvoke(self, "fromString", [value]))
 
 
 @jsii.enum(jsii_type="k8s.IoK8SApimachineryPkgApisMetaV1DeleteOptionsKind")
@@ -8344,7 +8344,7 @@ class IpBlock:
 
     def __repr__(self) -> str:
         return "IpBlock(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -8549,7 +8549,7 @@ class IscsiPersistentVolumeSource:
 
     def __repr__(self) -> str:
         return "IscsiPersistentVolumeSource(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -8754,7 +8754,7 @@ class IscsiVolumeSource:
 
     def __repr__(self) -> str:
         return "IscsiVolumeSource(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -8919,7 +8919,7 @@ class JobSpec:
 
     def __repr__(self) -> str:
         return "JobSpec(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 
@@ -8982,7 +8982,7 @@ class JobTemplateSpec:
 
     def __repr__(self) -> str:
         return "JobTemplateSpec(%s)" % ", ".join(
-            k + "=" + repr(v) for k, v in self._values.items()
+            f"{k}={repr(v)}" for k, v in self._values.items()
         )
 
 

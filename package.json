@@ -29,7 +29,7 @@
     ]
   },
   "devDependencies": {
-    "changelog-parser": "^2.8.0",
+    "changelog-parser": "^3.0.0",
     "lerna": "^3.22.1",
     "npm-check-updates": "10.3.1",
     "semver": "7.3.5",
